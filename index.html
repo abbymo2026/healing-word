@@ -39,7 +39,19 @@
             align-items: center;
         }
         
-        .logo {
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .logo-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+        }
+        
+        .logo-text {
             font-size: 1.5rem;
             font-weight: 700;
             background: linear-gradient(135deg, #0ea5e9, #06b6d4);
@@ -395,22 +407,17 @@
             align-items: center;
         }
         
-        .founder-image {
+        .founder-avatar {
             width: 300px;
             height: 300px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 8rem;
+            font-size: 10rem;
             box-shadow: 0 8px 30px rgba(0,0,0,0.2);
-        }
-        
-        .founder-bio h3 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #0f172a;
+            border: 8px solid white;
         }
         
         .founder-bio p {
@@ -418,6 +425,21 @@
             color: #475569;
             margin-bottom: 1.5rem;
             line-height: 1.8;
+        }
+        
+        .signature {
+            font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+            font-size: 2.5rem;
+            color: #0ea5e9;
+            margin-top: 2rem;
+            font-style: italic;
+        }
+        
+        .founder-title {
+            font-size: 1rem;
+            color: #64748b;
+            margin-top: 0.5rem;
+            font-style: normal;
         }
         
         .waitlist {
@@ -534,7 +556,7 @@
                 text-align: center;
             }
             
-            .founder-image {
+            .founder-avatar {
                 margin: 0 auto;
             }
             
@@ -551,7 +573,10 @@
 <body>
     <header>
         <nav>
-            <div class="logo">Healing Word</div>
+            <div class="logo-container">
+                <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/healing-word/main/logo.png" alt="Healing Word Logo" class="logo-image">
+                <div class="logo-text">Healing Word</div>
+            </div>
             <ul class="nav-links">
                 <li><a href="#problem">Why</a></li>
                 <li><a href="#features">Features</a></li>
@@ -575,7 +600,7 @@
                 After 12 years unable to master Dutch, I discovered what works: conversation. But tutors cost €30-50/hour—unsustainable for most. Healing Word uses ElevenLabs AI to provide 24/7 conversation partners in English, Dutch, and French. Learn through meaningful Scripture content while building real fluency.
             </p>
             <div class="cta-buttons">
-                <a href="https://formspree.io/f/mrebvgqg" class="btn btn-primary">Join Waitlist - Coming October 2026</a>
+                <a href="#waitlist" class="btn btn-primary">Join Waitlist - Coming October 2026</a>
                 <a href="#features" class="btn btn-secondary">Learn More</a>
             </div>
         </div>
@@ -699,7 +724,7 @@
                     <li>Read-along transcripts</li>
                     <li>Cancel anytime</li>
                 </ul>
-                <a href="https://formspree.io/f/mrebvgqg" class="btn btn-secondary" style="width: 100%; text-align: center;">Join Waitlist</a>
+                <a href="#waitlist" class="btn btn-secondary" style="width: 100%; text-align: center;">Join Waitlist</a>
             </div>
             
             <div class="pricing-card featured">
@@ -716,7 +741,7 @@
                     <li>Cultural coaching</li>
                     <li>Track your progress</li>
                 </ul>
-                <a href="https://formspree.io/f/mrebvgqg" class="btn btn-primary" style="width: 100%; text-align: center;">Join Waitlist</a>
+                <a href="#waitlist" class="btn btn-primary" style="width: 100%; text-align: center;">Join Waitlist</a>
             </div>
             
             <div class="pricing-card">
@@ -731,7 +756,7 @@
                     <li>Priority support</li>
                     <li>Early access to new features</li>
                 </ul>
-                <a href="https://formspree.io/f/mrebvgqg" class="btn btn-secondary" style="width: 100%; text-align: center;">Join Waitlist</a>
+                <a href="#waitlist" class="btn btn-secondary" style="width: 100%; text-align: center;">Join Waitlist</a>
             </div>
         </div>
     </section>
@@ -739,9 +764,8 @@
     <section id="founder" class="founder">
         <h2 class="section-title">Built by Someone Who Lived the Problem</h2>
         <div class="founder-content">
-            <div class="founder-image">👩🏾‍💻</div>
+            <div class="founder-avatar">👩🏾</div>
             <div class="founder-bio">
-                <h3>Founded by Abby</h3>
                 <p>
                     Our founder spent 12 years in the Netherlands unable to master Dutch—not for lack of trying, but because conversation costs €30-50/hour and affordable practice for 600+ hours simply wasn't accessible.
                 </p>
@@ -751,9 +775,10 @@
                 <p>
                     After years working with conversational AI systems, she realized the technology exists to democratize language learning. Healing Word is the AI tutor she wishes had existed twelve years ago—now available to 50 million+ heritage speakers at a fraction of traditional costs.
                 </p>
-                <p style="font-size: 0.95rem; color: #64748b;">
-                    Multilingual speaker (English, Dutch, French, Swahili) • AI & Language Learning Expert
-                </p>
+                <div class="signature">
+                    Abby
+                    <div class="founder-title">Founder, Healing Word • Multilingual AI & Language Learning Expert</div>
+                </div>
             </div>
         </div>
     </section>
