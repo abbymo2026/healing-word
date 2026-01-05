@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Healing Word - AI-powered language learning through Scripture. €15/month unlimited conversation vs €30K traditional tutoring. Launching October 2026.">
+    <meta name="description" content="Healing Word - AI-powered language learning through Scripture. €29/month unlimited conversation in 5 languages vs €30K traditional tutoring. Launching October 2026.">
     <title>Healing Word | AI Language Learning Through Scripture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -396,6 +399,17 @@
             margin-right: 0.5rem;
         }
         
+        .all-languages-badge {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
         .founder {
             background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
         }
@@ -411,13 +425,28 @@
             width: 300px;
             height: 300px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            background: linear-gradient(135deg, #1f2937, #374151);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 10rem;
             box-shadow: 0 8px 30px rgba(0,0,0,0.2);
             border: 8px solid white;
+            overflow: hidden;
+        }
+        
+        .avatar-silhouette {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 30px;
+        }
+        
+        .avatar-silhouette svg {
+            width: 180px;
+            height: 180px;
+            fill: #9ca3af;
         }
         
         .founder-bio p {
@@ -428,12 +457,14 @@
         }
         
         .signature {
-            font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
-            font-size: 3rem;
-            color: #0ea5e9;
+            font-family: 'Dancing Script', 'Brush Script MT', 'Lucida Handwriting', cursive;
+            font-size: 2.5rem;
+            color: #1f2937;
             margin-top: 2rem;
             font-style: italic;
             margin-bottom: 0.5rem;
+            font-weight: 400;
+            letter-spacing: 2px;
         }
         
         .founder-title {
@@ -594,7 +625,7 @@
                 I Wish Had Existed
             </h1>
             <p class="hero-subtitle">
-                Master languages through Scripture. €15/month unlimited AI conversation practice vs. €30,000 traditional tutoring costs.
+                Master languages through Scripture. One subscription. Five languages. Unlimited AI conversation.
             </p>
             <p class="hero-description">
                 After 12 years unable to master Dutch, I discovered what works: conversation. But tutors cost €30-50/hour—unsustainable for most. Healing Word uses ElevenLabs AI to provide 24/7 conversation partners in English, Dutch, and French. Learn through meaningful Scripture content while building real fluency.
@@ -623,8 +654,8 @@
                     <p>Traditional tutoring to fluency</p>
                 </div>
                 <div class="cost-box">
-                    <div class="cost-healing">€180 - €360</div>
-                    <p>Healing Word to fluency (98.5% cost reduction)</p>
+                    <div class="cost-healing">€348 per year</div>
+                    <p>Healing Word to fluency (99% cost reduction)</p>
                 </div>
             </div>
         </div>
@@ -638,25 +669,25 @@
             <div class="feature-card">
                 <div class="feature-icon">📚</div>
                 <h3>5 Complete Multilingual Bibles</h3>
-                <p>Professional audio narration in English (KJV), Dutch (Statenvertaling), French (Louis Segond), German (Luther), and Spanish (Reina-Valera). 5,945 chapters from Genesis to Revelation.</p>
+                <p>Professional audio narration in English (KJV), Dutch (Statenvertaling), French (Louis Segond), German (Luther), and Spanish (Reina-Valera). All 5,945 chapters included in every plan.</p>
             </div>
             
             <div class="feature-card">
                 <div class="feature-icon">🤖</div>
                 <h3>AI Conversation Partners</h3>
-                <p>Practice real-time dialogue with AI tutors powered by ElevenLabs. Available 24/7 in English, Dutch, and French. Get pronunciation feedback and cultural coaching.</p>
+                <p>Practice real-time dialogue with AI tutors powered by ElevenLabs. Available 24/7 in English, Dutch, and French. Switch between languages anytime. Get pronunciation feedback and cultural coaching.</p>
             </div>
             
             <div class="feature-card">
                 <div class="feature-icon">📖</div>
                 <h3>Meaningful Content</h3>
-                <p>Learn through Scripture you actually want to engage with. Build vocabulary around topics that matter. Complete the Bible while mastering a language.</p>
+                <p>Learn through Scripture you actually want to engage with. Build vocabulary around topics that matter. Complete the Bible while mastering multiple languages simultaneously.</p>
             </div>
             
             <div class="feature-card">
                 <div class="feature-icon">⚡</div>
                 <h3>Sub-100ms Response Time</h3>
-                <p>Natural, fluid conversations with no robotic pauses. ElevenLabs technology delivers human-like dialogue that keeps you engaged.</p>
+                <p>Natural, fluid conversations with no robotic pauses. ElevenLabs technology delivers human-like dialogue that keeps you engaged across all languages.</p>
             </div>
             
             <div class="feature-card">
@@ -674,7 +705,8 @@
     </section>
 
     <section id="languages" class="languages">
-        <h2 class="section-title">Five Languages, Launching October 2026</h2>
+        <h2 class="section-title">Five Languages, One Subscription</h2>
+        <p class="section-subtitle">All audio libraries included in every plan. AI conversation available in English, Dutch, and French at launch.</p>
         <div class="languages-grid">
             <div class="language-card">
                 <div class="flag">🇬🇧</div>
@@ -702,22 +734,23 @@
                 <p>Reina-Valera</p>
             </div>
         </div>
-        <p style="text-align: center; margin-top: 2rem; color: #64748b;">
-            AI conversation partners available in English, Dutch, and French at launch. German and Spanish agents coming 2027.
+        <p style="text-align: center; margin-top: 2rem; color: #64748b; font-weight: 600;">
+            German and Spanish AI conversation partners coming 2027 - added free to all subscribers
         </p>
     </section>
 
     <section id="pricing">
         <h2 class="section-title">Choose Your Learning Path</h2>
-        <p class="section-subtitle">Affordable pricing for everyone. Cancel anytime.</p>
+        <p class="section-subtitle">All plans include all 5 languages. No hidden fees. Cancel anytime.</p>
         
         <div class="pricing-grid">
             <div class="pricing-card">
+                <div class="all-languages-badge">ALL 5 LANGUAGES</div>
                 <h3>Listener Tier</h3>
-                <div class="price">€5</div>
+                <div class="price">€9</div>
                 <div class="price-period">per month</div>
                 <ul class="features-list">
-                    <li>Access to all 5 Bible audio libraries</li>
+                    <li>All 5 Bible audio libraries included</li>
                     <li>English, Dutch, French, German, Spanish</li>
                     <li>5,945 chapters Genesis to Revelation</li>
                     <li>Download for offline listening</li>
@@ -729,32 +762,38 @@
             
             <div class="pricing-card featured">
                 <span class="badge">MOST POPULAR</span>
+                <div class="all-languages-badge">ALL 5 LANGUAGES</div>
                 <h3>Tutor Tier</h3>
-                <div class="price">€15</div>
+                <div class="price">€29</div>
                 <div class="price-period">per month</div>
                 <ul class="features-list">
                     <li>Everything in Listener tier</li>
-                    <li>Unlimited AI conversation practice</li>
+                    <li>Unlimited AI conversation in EN, NL, FR</li>
+                    <li>Switch between languages anytime</li>
                     <li>Real-time pronunciation feedback</li>
-                    <li>Available 24/7 (English, Dutch, French)</li>
+                    <li>Available 24/7 - practice multiple languages</li>
                     <li>Personalized learning path</li>
-                    <li>Cultural coaching</li>
-                    <li>Track your progress</li>
+                    <li>Cultural coaching from native speakers</li>
+                    <li>Track progress across all languages</li>
+                    <li>German & Spanish AI tutors added free 2027</li>
                 </ul>
                 <a href="#waitlist" class="btn btn-primary" style="width: 100%; text-align: center;">Join Waitlist</a>
             </div>
             
             <div class="pricing-card">
+                <div class="all-languages-badge">ALL LANGUAGES FOREVER</div>
                 <h3>Lifetime Access</h3>
-                <div class="price">€299</div>
+                <div class="price">€997</div>
                 <div class="price-period">one-time payment</div>
                 <ul class="features-list">
-                    <li>All tiers, all languages, forever</li>
+                    <li>All 5 current languages forever</li>
+                    <li>All future languages added FREE</li>
+                    <li>All AI conversation partners (current + future)</li>
                     <li>Never pay again</li>
-                    <li>All current and future languages</li>
-                    <li>All features included</li>
                     <li>Priority support</li>
                     <li>Early access to new features</li>
+                    <li>Lifetime updates included</li>
+                    <li>Best value for serious learners</li>
                 </ul>
                 <a href="#waitlist" class="btn btn-secondary" style="width: 100%; text-align: center;">Join Waitlist</a>
             </div>
@@ -764,7 +803,13 @@
     <section id="founder" class="founder">
         <h2 class="section-title">Built by Someone Who Lived the Problem</h2>
         <div class="founder-content">
-            <div class="founder-avatar">👩🏾</div>
+            <div class="founder-avatar">
+                <div class="avatar-silhouette">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                    </svg>
+                </div>
+            </div>
             <div class="founder-bio">
                 <p>
                     Our founder spent 12 years in the Netherlands unable to master Dutch—not for lack of trying, but because conversation costs €30-50/hour and affordable practice for 600+ hours simply wasn't accessible.
@@ -829,7 +874,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2026 Healing Word.</p>
+            <p>&copy; 2026 Healing Word. </p>
             <p class="elevenlabs-badge">Powered by ElevenLabs Conversational AI</p>
         </div>
     </footer>
